@@ -32,7 +32,7 @@
 			if (skel.canUse('transition')) {
 
 				// Add (and later, on load, remove) "loading" class.
-					$body.addClass('loading');
+					//$body.addClass('loading');
 
 					$window.on('load', function() {
 						window.setTimeout(function() {
@@ -266,7 +266,7 @@
 						return s;
 
 					},
-					fadeSpeed: 300,
+					fadeSpeed: 150,
 					onPopupClose: function() { $body.removeClass('modal-active'); },
 					onPopupOpen: function() { $body.addClass('modal-active'); },
 					overlayOpacity: 0,
@@ -280,7 +280,7 @@
 					usePopupCloser: true,
 					usePopupDefaultStyling: false,
 					usePopupForceClose: true,
-					usePopupLoader: true,
+					usePopupLoader: false,
 					usePopupNav: true,
 					windowMargin: 50
 				});
