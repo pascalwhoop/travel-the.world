@@ -26,11 +26,14 @@
 		user-select: none;
 		width: 100%;
 		z-index: _misc(z-index-base) + 2;
+		display: flex;
 
 		body.loading & {
 			@include vendor('transform', 'translateY(#{_size(header)})');
 		}
-
+		.title-wrapper{
+			flex: 1 0;
+		}
 		h1 {
 			color: _palette(fg);
 			display: inline-block;
@@ -50,9 +53,7 @@
 		}
 
 		nav {
-			position: absolute;
-			right: 0;
-			top: 0;
+			flex: 0 1 auto;
 
 			> ul {
 				list-style: none;
